@@ -1,30 +1,57 @@
+<div align="center">
+
 # StackRunway
 
-**Know the balance before the bills land.**
+### Know the balance before the bills land.
 
-StackRunway is a free, private developer subscription runway calculator. Add subscriptions, infrastructure, API credits, domains and annual renewals, then see the minimum opening balance required to survive the next 30, 60 or 90 days without a failed payment.
+**Free · private · local-first · one file**
 
-The primary answer is intentionally direct:
+[Open StackRunway](https://skylab008.github.io/StackRunway/) · [Download the HTML](index.html) · [Fork your own copy](https://github.com/Skylab008/StackRunway/fork)
 
-> You need $684.20 in this account on 1 September to cover every scheduled development expense through 30 November.
+</div>
 
-It also identifies the most expensive week, annual costs hidden behind monthly equivalents, an upcoming funding gap and the savings created by pausing an expense.
+---
 
-## Use StackRunway
+Developer expenses rarely arrive in a neat monthly bundle. Hosting renews on Tuesday. API credits run out on Friday. Three annual tools land in the same week and the account balance that looked comfortable suddenly is not.
 
-Open the [live GitHub Pages app](https://skylab008.github.io/StackRunway/) or download `index.html` and open it in any modern browser.
+**StackRunway answers the question ordinary expense trackers miss:**
 
-No installation, account, bank connection, build command or server is required.
+> How much must be in the bank before the runway begins?
 
-## Privacy and backups
+Add subscriptions, infrastructure, API credits, domains and renewals. Choose 30, 60 or 90 days. StackRunway works through the actual billing dates and gives you one clear answer:
 
-All data stays in the browser. StackRunway autosaves after every change using `localStorage`. Use **Export JSON** to keep a portable backup and **Restore JSON** to recover it after clearing browser data or moving to another device.
+> **You need $684.20 in this account on 1 September to cover every scheduled development expense through 30 November.**
 
-The repository contains no analytics, cookies, trackers or third-party runtime dependencies.
+## Your runway at a glance
 
-## Run locally
+StackRunway reveals the minimum opening balance, the most expensive week, annual costs hiding behind monthly affordability, the first projected funding gap and the exact effect of pausing a subscription.
 
-Clone the repository and open `index.html`:
+This is not another dashboard that tells you what you spent last month. It helps protect the next deployment before the charges arrive.
+
+## Open it and start
+
+Use the [live GitHub Pages edition](https://skylab008.github.io/StackRunway/) in any modern browser. Nothing needs to be installed and there is no account, bank connection, build command or server.
+
+Prefer to own the file? Download [`index.html`](index.html), open it and it runs. The complete interface, styles and calculation engine live inside that single file.
+
+## Private by design
+
+| StackRunway does | StackRunway does not |
+| --- | --- |
+| Saves automatically in your browser | Send financial data to a server |
+| Exports a portable JSON backup | Connect to a bank account |
+| Restores your data on another device | Use analytics or trackers |
+| Runs without a backend | Require a login or subscription |
+
+Browser storage can be cleared, so **Export JSON** is the durable backup. **Restore JSON** brings the runway back whenever you need it.
+
+## Built for real billing dates
+
+The selected start date is day one. StackRunway projects each active expense from its next billing date across the chosen 30, 60 or 90-day horizon. Weekly, fortnightly, monthly, quarterly, annual and one-off expenses are supported. Month-end billing stays on the last valid day when a later month is shorter.
+
+Pausing an expense removes it from the active calculation without deleting it, making cancellation decisions visible before they are made.
+
+## Take it, fork it, improve it
 
 ```bash
 git clone https://github.com/Skylab008/StackRunway.git
@@ -32,25 +59,14 @@ cd StackRunway
 open index.html
 ```
 
-You can also serve the directory through any static file server. The result is identical because the app has no backend.
+StackRunway is an open-source gift to developers dealing with subscription sprawl and uneven billing cycles. Fork it, adapt it for your stack or send back an improvement through a pull request.
 
-## Calculation model
+Useful software does not always need a gate, a funnel or another subscription.
 
-- The selected start date is day one of the runway.
-- The selected horizon includes 30, 60 or 90 calendar days.
-- Recurring expenses are projected from their next billing date.
-- Month-end dates remain at the last valid day when a later month is shorter.
-- Paused expenses remain in the planner but are removed from the active calculation.
-- The funding-gap view compares the available opening balance with cumulative scheduled charges.
+## Created and released by
 
-StackRunway is a planning tool. It does not predict taxes, usage-based overages, price changes or exchange-rate movements.
+[Ashe Davis](https://github.com/Skylab008), an independent SaaS builder creating practical tools at the intersection of software, publishing and creative work.
 
-## Make it yours
+Released under the [MIT Licence](LICENSE).
 
-Fork the repository or copy the single `index.html` file into another static site. Everything needed to run the app — interface, styles and calculation logic — is contained in that file.
-
-Contributions and thoughtful improvements are welcome through issues and pull requests.
-
-## Licence
-
-[MIT](LICENSE)
+<sub>Planning estimates only. StackRunway does not predict taxes, exchange-rate movements, price changes or usage-based overages.</sub>
