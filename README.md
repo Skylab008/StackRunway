@@ -12,6 +12,8 @@
 
 ---
 
+![StackRunway developer subscription runway](assets/stackrunway-preview.webp)
+
 Developer expenses rarely arrive in a neat monthly bundle. Hosting renews on Tuesday. API credits run out on Friday. Three annual tools land in the same week and the account balance that looked comfortable suddenly is not.
 
 **StackRunway answers the question ordinary expense trackers miss:**
@@ -68,5 +70,7 @@ Useful software does not always need a gate, a funnel or another subscription.
 [Ashe Davis](https://github.com/Skylab008), an independent SaaS builder creating practical tools at the intersection of software, publishing and creative work.
 
 Released under the [MIT Licence](LICENSE).
+
+[Contributing](CONTRIBUTING.md) · [Security](SECURITY.md) · [Code of Conduct](CODE_OF_CONDUCT.md) · [Changelog](CHANGELOG.md)
 
 <sub>Planning estimates only. StackRunway does not predict taxes, exchange-rate movements, price changes or usage-based overages.</sub>
